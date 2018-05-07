@@ -29,13 +29,13 @@ def main():
             with open(to + name, 'wb') as f:
                 f.write(response.content)
                 f.close()
-                print(name)
+                #print(name)
                 count += 1
                 with open(log, 'a+') as a:
                     a.write('Count: ' + str(count) + ', ' + l + '\n')
                     a.close()   
         except Exception as e:
-            print(e)
+            #print(e)
             errors += 1
 
     with open(log, 'a+') as f:
