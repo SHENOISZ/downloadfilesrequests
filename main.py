@@ -13,8 +13,6 @@ to = '/home/ziggi/files/apks/'
 log = os.path.abspath(__file__)
 log = str(log).replace(__file__, '') + 'apks.log'
 
-print log
-
 with open('apks_storage.txt', 'r') as f:
     lista = f.read().split(';')
     f.close()
