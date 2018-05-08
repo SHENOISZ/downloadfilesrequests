@@ -6,14 +6,14 @@ __author__ = "SHENOISZ"
 import requests, os
 
 lista = []
-prefix = 'https://storage.googleapis.com/files-download/files_backup/apks/'
-to = '/home/ziggi/files/apks/'
+prefix = 'https://storage.googleapis.com/files-download/files_backup/exes/'
+to = '/home/ziggi/files/exes/'
 #to = '/home/shenoisz/Documents/estudos/python/load-files/files/'
 
 log = os.path.abspath(__file__)
-log = str(log).replace(__file__, '') + 'apks.log'
+log = str(log).replace(__file__, '') + 'exes.log'
 
-with open('apks_storage.txt', 'r') as f:
+with open('exes_storage.txt', 'r') as f:
     lista = f.read().split(';')
     f.close()
 
